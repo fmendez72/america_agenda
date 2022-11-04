@@ -28,7 +28,7 @@ navbar:
         - text: "Subnational-initiated referendum"
           href: subInitiatedDefinitions.html
     - text: "Preview data"
-      href: datapreview.html
+      href: data1.html
     - text: "Links"
       href: links.html
 output_dir: "docs"
