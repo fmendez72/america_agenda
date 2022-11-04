@@ -24,7 +24,6 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor in
 </div>
 <div class="col-sm-6">
 
-### [Popular Sovereignty vs. the Rule of Law? Defining the Limits of Direct Democracy (LIDD)](https://www.ivr.uzh.ch/en/institutsmitglieder/moeckli/Research-project-LIDD.html)
 
 <a href = "https://fmendez72.github.io/america_agenda/">
 ![](images/lidd2.png)
