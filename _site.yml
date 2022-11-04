@@ -1,0 +1,13 @@
+name: "LIDD coding"
+navbar:
+  title: "LIDD project"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Data preview"
+      href: DataPreview.html
+    - text: "Data Explore"
+      href: DataPreview2.html
+    - text: "Rejection Analysis"
+      href: rejection_analysis.html
+output_dir: "docs"

@@ -1,0 +1,36 @@
+---
+title: "Rejection analysis"
+output: html_document
+---
+
+Welcome to the rejection analysis web page. This section of the website will house the ongoing rejection data collection efforts and analyses. 
+
+The webpage will be updated as the analysis proceeds.
+<br/><br/>
+
+### Conceptualisation & Taxonomy
+<a href="https://fmendez72.github.io/lidd/Liddpages/rejection/concept/concept_home.html" target="_blank">This section </a>includes information on the overall conceptualisation and the taxonomy of admissibility test models 
+<br/><br/>
+
+### Country Reports
+Follow these links to access the different types of Country reports
+
+##### <a href="https://fmendez72.github.io/lidd/Liddpages/rejection/agenda/agenda_home.html" target="_blank">Agenda Initiatives</a>
+
+##### <a href="https://fmendez72.github.io/lidd/Liddpages/rejection/proactive/proactive_home.html" target="_blank">Proactive initiatives</a>   
+##### <a href="https://fmendez72.github.io/lidd/Liddpages/rejection/rejective/rejective_home.html" target="_blank">Rejective initiatives</a>
+<br/>
+
+### Summaries
+<a href="https://fmendez72.github.io/lidd/Liddpages/rejection/summary/summary_home.html" target="_blank">This section </a> stores the summaries of the analysis
+<br/><br/>
+
+### Resources and Links
+
+1. Here is an example of a link to a webpage of our own <a href="https://fmendez72.github.io/lidd/Liddpages/ConceptualMap.html" target="_blank">[see link]</a>
+
+2. Here is an example of an external link to the <a href="https://www.constituteproject.org/search?lang=en" target="_blank">Constitute Project</a> database, which has all country constitutions in English.   
+
+3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+4. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

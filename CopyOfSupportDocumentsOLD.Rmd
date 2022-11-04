@@ -1,0 +1,79 @@
+---
+title: "Support documents"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    #code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+<br/><br/>
+
+# Results of coding exercise
+Here we can see the results of the pilot project. You can view the jobs from the external coders, and compare them with the LIDD coding jobs. The data is presented in order of completion, beginning with the pilot round of codes. 
+
+
+# Slovakia
+
+### Law initiated
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/Law_coder1.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Executive-initiated
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/Executive_coder1.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Legislative-initiated
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/Legislature_codr1.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Subnational-initiated
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/ConceptualMap.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Citizen-initiated Proactive
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/Proactive_coder1.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/Proactive_lidd.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Citizen-initiated Rejective
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/Rejective_coder1.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
+### Citizens' Agenda Initiative
+1. <a href="https://fmendez72.github.io/lidd/Liddpages/ConceptualMap.html" target="_blank">View external coders</a>
+
+2. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View LIDD codings</a>
+
+3. <a href="https://fmendez72.github.io/lidd/Liddpages/lawInitiatedDefinitions.html" target="_blank">View reconcialiation</a>
+<br/><br/>
+
