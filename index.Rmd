@@ -17,20 +17,16 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **Welcome to the BETA version of the LIDD project website **
+# **Welcome to the Agenda Initiative in the Americas project website**
 
-With the mushrooming of direct democratic instruments throughout Europe and the introduction of the European Citizens Initiative (ECI), the relationship between popular sovereignty and the rule of law is set to become one of the defining political issues of our time. Where should the legal limits of direct democracy be drawn? Who should review compliance with these limits? It is the objective of LIDD to provide the scientific basis for answering these questions.  
-
-The project builds on a comparative legal analysis, making it possible to capitalize on the wealth of experience gained with direct democratic instruments in Switzerland and, more recently, other European states in order to develop general conclusions.
-
-This websites offers an early preview of the LIDD database. Please note this is a work in progress, once the data collection and processing is complete the database will migrate to the official LIDD website
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 </div>
 <div class="col-sm-6">
 
 ### [Popular Sovereignty vs. the Rule of Law? Defining the Limits of Direct Democracy (LIDD)](https://www.ivr.uzh.ch/en/institutsmitglieder/moeckli/Research-project-LIDD.html)
 
-<a href = "https://fmendez72.github.io/lidd/">
+<a href = "https://fmendez72.github.io/america_agenda/">
 ![](images/lidd2.png)
 </a>
 </div>

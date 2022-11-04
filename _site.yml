@@ -1,13 +1,13 @@
-name: "LIDD coding"
+name: "Americas agenda"
 navbar:
-  title: "LIDD project"
+  title: "Agenda iniative"
   left:
     - text: "Home"
       href: index.html
-    - text: "Data preview"
-      href: DataPreview.html
-    - text: "Data Explore"
-      href: DataPreview2.html
-    - text: "Rejection Analysis"
-      href: rejection_analysis.html
+    - text: "Documentation"
+      href: documentation.html
+    - text: "Preview data"
+      href: datapreview.html
+    - text: "Links"
+      href: links.html
 output_dir: "docs"
