@@ -12,6 +12,11 @@ navbar:
           href: conceptual.html
         - text: "Instrument definitions"
           href: definitions.html  
+        - text: "Questionnaires"
+        - text: "Agenda initiative"
+          href: agendaInitiatedDefinitions.html
+        - text: "Proactive citizens initiative"
+          href: proactiveInitiatedDefinitions.html  
     - text: "Preview data"
       href: datapreview.html
     - text: "Links"
