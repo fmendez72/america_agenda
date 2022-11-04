@@ -1,0 +1,16 @@
+---
+title: "Direct democracy typology"
+output: html_document
+---
+
+<br/>
+
+#### Overall conceptualisation
+The typology is informed by the LIDD project and comprises 7 instruments of direct democracy depicted that are depicted in the figure below. These are the most prevalent instruments of direct democracy across the Council of Europe states. Definitions for each of the instruments are provided in the boxes below. The typology does not include the Recall referendum
+
+<br/><br/>
+
+<img src="https://fmendez72.github.io/america_agenda/images/liddConcept2.png" width=70% height=70%>
+<br/><br/>
+
+
