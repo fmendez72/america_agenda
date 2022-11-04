@@ -6,6 +6,10 @@ navbar:
       href: index.html
     - text: "Documentation"
       href: documentation.html
+      menu:
+        - text: "Heading 1"
+        - text: "Page A"
+          href: page-a.html
     - text: "Preview data"
       href: datapreview.html
     - text: "Links"
