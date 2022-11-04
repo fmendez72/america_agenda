@@ -1,5 +1,5 @@
 ---
-title: "Agenda initiative"
+title: "Citizen-initiated Proactive referendum"
 output: html_document
 ---
 
@@ -16,8 +16,9 @@ library(kableExtra)
 ```
 
 #### List of questionnaire items and definitions/explanations
+
 ```{r,echo=FALSE}
-df=read.csv("~/Dropbox/testGitHub/lidd/Liddpages/agenda.csv",stringsAsFactors = F)
+df=read.csv("~/Dropbox/testGitHub/lidd/Liddpages/proactive.csv",stringsAsFactors = F)
 
 names(df)[3]<-"Definitions and Explanations"
 df %>% 

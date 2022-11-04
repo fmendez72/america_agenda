@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Law-initiated referendums</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Agenda iniative</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Documentation
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Typology</li>
+    <li>
+      <a href="conceptual.html">Conceptual framework</a>
+    </li>
+    <li>
+      <a href="definitions.html">Instrument definitions</a>
+    </li>
+    <li class="dropdown-header">Questionnaires</li>
+    <li>
+      <a href="agendaInitiatedDefinitions.html">Agenda initiative</a>
+    </li>
+    <li>
+      <a href="proactiveInitiatedDefinitions.html">Proactive citizens initiative</a>
+    </li>
+    <li>
+      <a href="rejectiveInitiatedDefinitions.html">Rejective citizens initiative</a>
+    </li>
+    <li>
+      <a href="lawInitiatedDefinitions.html">Law-initiated referendum</a>
+    </li>
+    <li>
+      <a href="legInitiatedDefinitions.html">Legislature-initiated referendum</a>
+    </li>
+    <li>
+      <a href="exeInitiatedDefinitions.html">Executive-initiated referendum</a>
+    </li>
+    <li>
+      <a href="subInitiatedDefinitions.html">Subnational-initiated referendum</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="datapreview.html">Preview data</a>
+</li>
+<li>
+  <a href="links.html">Links</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Law-initiated referendums</h1>
+
+</div>
+
+
+<p><br/></p>
+<div id="list-of-questionnaire-items-and-definitionsexplanations"
+class="section level4">
+<h4>List of questionnaire items and definitions/explanations</h4>
+<table class="table table-striped" style="width: auto !important; ">
+<thead>
+<tr>
+<th style="text-align:right;">
+ID
+</th>
+<th style="text-align:left;">
+Item
+</th>
+<th style="text-align:left;">
+Definitions and Explanations
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Is there a law-initiated referendum at the national level?
+</td>
+<td style="text-align:left;">
+A referendum (i.e. a popular vote) that is triggered if certain
+conditions specified by law (i.e. the constitution or a piece of
+legislation) are met. The law may determine the topic (e.g. transfer of
+sovereignty) or the type of legal act (e.g. constitutional amendment)
+that triggers the referendum process. The law can either directly
+require the holding of a referendum or require it in case certain
+additional conditions are not met (e.g. a constitutional amendment is
+not passed by a supermajority in parliament). In the latter case, if the
+conditions are not met, the state organs have no other choice but to
+call a referendum, so the referendum is triggered by law, not initiated
+by the state organ.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Any constitutional amendment triggers a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that any
+consitutional amendment shall be suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+Certain constitutional amendments trigger a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that only some
+consitutional amendment shall be suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+The total revision of the constitution triggers a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that only the
+adoption of a new constitution or a total revision of the old
+constitution shall be suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+Territorial changes trigger a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that changes to
+state borders or territory shall be suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+The ratification of any international treaty triggers a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that the
+ratification of any international agreement shall be suppported by a
+referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+The ratification of certain international treaties triggers a
+referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that only the
+ratification of some international agreements shall be suppported by a
+referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+The association with any other state or international organisation
+triggers a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that all
+associations with other states or international organisations shall be
+suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+The association with certain states or international organisations
+triggers a referendum?
+</td>
+<td style="text-align:left;">
+This question refers to a legal provision which mandates that only some
+associations with other states or international organisations shall be
+suppported by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Are there any other issues or events that trigger a referendum?
+</td>
+<td style="text-align:left;">
+If there are any other events or issues for which a legal provision
+prescribes a referendum, please indictate those in the comment section
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Are there any exceptions when a referendum is not required to take place
+even though the triggering event or issue exists?
+</td>
+<td style="text-align:left;">
+Such an exception could be some specific decision-making quorum
+(e.g. supermajority in the parliament) or some special institutional
+setting (e.g. a special constitutional assembly decides) in which case
+no referendum has to be held
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Are there any procedures for reviewing the triggering issue or event?
+</td>
+<td style="text-align:left;">
+Whether there are any procedures that apply to law-initiated
+referendums. For example a judicial review of the issue put to a
+referendum.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Are there any unamendable constitutional provisions that limit
+referendums?
+</td>
+<td style="text-align:left;">
+This question applies only to law-initiated referendums. The question is
+whether there are constitutional provisions that cannot be changed.
+Please indicate in the comment section whether such unamendable
+constitutional provisions can be changed by a referendum or are they
+limiting the scope of referendums.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Are referendums related to international law obligations prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to the signing or ratification of international
+treaties, association with other states and participation in
+international organisations
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+Are referendums related to fundamental rights and freedoms prohibited?
+</td>
+<td style="text-align:left;">
+Including both the restriction and the expansion of fundamental rights
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+Are referendums on state structure or form of government prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing such fundamental features of
+the constitutional system as for example parliamentary democracy,
+separation of powers, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Are referendums on state symbols prohibited?
+</td>
+<td style="text-align:left;">
+Including state flag, national anthem, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+Are referendums on the official language prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the official language
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+Are referendums on territorial issues or territorial integrity
+prohibited?
+</td>
+<td style="text-align:left;">
+Including any question about state territory
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+Are referendums on state finances (budget, taxes, or other financial
+obligations) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a limit on proposing changes in either the
+revenue or the expenditure side of the state finances or on anything
+else related to state finances.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+Are referendums issues related to national security (military, police,
+secret services) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on referendums about the organisation and
+the rules of the internal security of the state
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+Are referendums on emergency powers (declaration of war, state of
+emergency, etc) and urgent matters prohibited?
+</td>
+<td style="text-align:left;">
+This includes a ban on war powers and also state emergency measures
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+Are referendums on pardon and amnesty prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to individual and mass measures of setting
+prisoners free
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+Are referendums on naturalisation issues prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to questions about citizenship
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
+Are referendums on minorities or minority rights prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on changing the status or rights of
+minorities in the country
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+Are referendums on the rules of elections and referendums prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on changing legal provisions of elections
+and referendums by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+Are referendums on the election or appointment of state officials or
+civil service laws prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on having a referendum about single
+appointments or laws on state personnel
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:left;">
+Are referendums on legislative competences prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of legislative
+competences
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+Are referendums on executive competences prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of executive
+competences
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+Are referendums on issues related to the judiciary (competences,
+independence, etc) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of judicial
+competences or any other issue that may change the status or
+independence of the judiciary
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:left;">
+Are referendums on issues related to local governance prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the status, the composition or
+the competences of local governments
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:left;">
+Are there any other prohibited issues? (if Yes, describe in Comments
+box)
+</td>
+<td style="text-align:left;">
+If there are any other prohibited topics, please indicate those in the
+comments section
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:left;">
+Are there any formal limits on the wording of the referendum proposal?
+</td>
+<td style="text-align:left;">
+Whether there are legal restrictions on how the referendum question or
+issue has to be formulated (e.g. it has to be clear, it has to be a
+single question, etc.)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:left;">
+Is there a clarity of the question requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the referendum question or issue
+has to be formulated precisely, in a clear, non-misleading manner
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:left;">
+Is there a unity of form requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the referendum question or issue
+shall not combine a general and a specifically-worded proposal
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:left;">
+Is there a unity of substance requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the different parts of
+referendum question or issue shall have an internal connection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+Are there any other formal limits? (if Yes, describe in Comments box)
+</td>
+<td style="text-align:left;">
+Whether there are any other requirements about the formulation of the
+referendum question or issue
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:left;">
+Is the referendum result binding?
+</td>
+<td style="text-align:left;">
+Whether the successful referendum leads to an automatic change of the
+law or forces the legislature to adopt a law, or is it only advisory and
+the legislature decides if it wants to give effect to the referendum
+result
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:left;">
+Turnout quorum
+</td>
+<td style="text-align:left;">
+Number (percentage) of participants in the popular vote required for the
+vote to be valid
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+Approval quorum
+</td>
+<td style="text-align:left;">
+Number of voters (percentage) who have to approve the referendum for it
+to pass
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:left;">
+Territorial approval threshold (if Yes, describe in Comments box)
+</td>
+<td style="text-align:left;">
+The turnout or the approval quorum is linked to a number of territorial
+units, so for a referendum to be valid and sucessful a number of
+territorial units must be represented by the voters
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:left;">
+Who is responsible for certifying/validating the referendum result?
+</td>
+<td style="text-align:left;">
+Who establishes the final results of the referendum after the counting
+of the votes? This question refers to the state body that makes the
+official decision on the results.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:left;">
+Does this type of referendum exist at the subnational level?
+</td>
+<td style="text-align:left;">
+Whether this instrument has a local or regional version, when the vote
+also takes place at local level
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

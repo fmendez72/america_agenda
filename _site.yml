@@ -17,6 +17,16 @@ navbar:
           href: agendaInitiatedDefinitions.html
         - text: "Proactive citizens initiative"
           href: proactiveInitiatedDefinitions.html  
+        - text: "Rejective citizens initiative"
+          href: rejectiveInitiatedDefinitions.html
+        - text: "Law-initiated referendum"
+          href: lawInitiatedDefinitions.html
+        - text: "Legislature-initiated referendum"
+          href: legInitiatedDefinitions.html
+        - text: "Executive-initiated referendum"
+          href: exeInitiatedDefinitions.html
+        - text: "Subnational-initiated referendum"
+          href: subInitiatedDefinitions.html
     - text: "Preview data"
       href: datapreview.html
     - text: "Links"
