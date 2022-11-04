@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Citizens Agenda initiative</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Agenda iniative</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Documentation
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Typology</li>
+    <li>
+      <a href="conceptual.html">Conceptual framework</a>
+    </li>
+    <li>
+      <a href="definitions.html">Instrument definitions</a>
+    </li>
+    <li class="dropdown-header">Questionnaires</li>
+    <li>
+      <a href="agendaInitiatedDefinitions.html">Agenda initiative</a>
+    </li>
+    <li>
+      <a href="proactiveInitiatedDefinitions.html">Proactive citizens initiative</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="datapreview.html">Preview data</a>
+</li>
+<li>
+  <a href="links.html">Links</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Citizens Agenda initiative</h1>
+
+</div>
+
+
+<div id="list-of-questionnaire-items-and-definitionsexplanations"
+class="section level2">
+<h2>List of questionnaire items and definitions/explanations</h2>
+<table class="table table-striped" style="width: auto !important; ">
+<thead>
+<tr>
+<th style="text-align:right;">
+ID
+</th>
+<th style="text-align:left;">
+Item
+</th>
+<th style="text-align:left;">
+Definitions and Explanations
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Is there a citizen-initiated agenda proposal at the national level?
+</td>
+<td style="text-align:left;">
+An instrument that allows a certain number of citizens to put an issue
+on the agenda of state organs but that does not lead to a referendum
+(i.e. a popular vote). An agenda initiave mandates the state organ to
+deal with the proposal: at least debate it or make a decision about it.
+General petition rights should not be included here unless the state
+organs have an obligation to react to the petition.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Is there an explicit legal basis for this type of instrument?
+</td>
+<td style="text-align:left;">
+Whether there is a clear legislative basis for the instrument or it has
+only evolved in the practice (judicial pratice, etc.).
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+What is the total number of signatures required?
+</td>
+<td style="text-align:left;">
+The number of voters that have to support the agenda initiative in order
+for it to be put on the agenda of the legislature
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Is there a territorial threshold for signature gathering?
+</td>
+<td style="text-align:left;">
+Whether the required number of signatures is also linked to a certain
+number of territorial units, meaning that the cititzens supporting the
+initiative must represent a number of territorial units
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+What is the time limit for collecting the required number of signatures?
+(in days)
+</td>
+<td style="text-align:left;">
+Number of days allowed for completing the signature collection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Are there any restrictions on where the signatures can be collected?
+</td>
+<td style="text-align:left;">
+Are there for example designated venues for the collection of
+signatures? Is the collection prohibited at certain places? Is the
+collection restricted to state offices?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Do signatories have to provide identification documents in addition to
+personal information when signing the initative?
+</td>
+<td style="text-align:left;">
+Whether the voters have to provide identification numbers or passports
+or something similar.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Is it possible to gather signatures electronically?
+</td>
+<td style="text-align:left;">
+Whether signatures can be collected online, including all types of
+electronic signatures
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Are the signatures systematically verified?
+</td>
+<td style="text-align:left;">
+Whether the authority counting the signatures check each signature and
+personal information or only a random check is carried out
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Who checks the signatures?
+</td>
+<td style="text-align:left;">
+The authority entrusted with counting and verifying the signatures
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Is there a legal remedy against invalidation of signatures?
+</td>
+<td style="text-align:left;">
+A remedy specifically for cases when the authority invalidates
+signatures, or refuses to forward the proposal based on the number of
+signatures
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Is there a formal admissibility check?
+</td>
+<td style="text-align:left;">
+Whether there is a decision on formally admitting or registering the
+initiative/referendum question. Such a formal admission decision could
+entail checking the adherence to the procedural rules of initiating the
+referendum (e.g. initiative group formed, etc.), or also checking formal
+limits such as clarity of question, unity of form
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Who decides about the formal admissibility?
+</td>
+<td style="text-align:left;">
+Which state institution registers the initiative?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+Is there a legal remedy against the decision on formal admissibility?
+</td>
+<td style="text-align:left;">
+Appeal to a higher administrative, judicial or other state organ against
+the decision on admissibility/registration
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+Who decides about the claim for remedy in the formal admissibility
+procedure?
+</td>
+<td style="text-align:left;">
+Which state institution carries out the appeal procedure
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Who can initiate the remedy procedure? (state actor - initiator -
+anyone)
+</td>
+<td style="text-align:left;">
+Who has the right to appeal against the formal admissibility decision
+(e.g. only the initiators, any citizens, certain state actors etc.)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+Does the formal admissibility procedure take place before the signature
+collection?
+</td>
+<td style="text-align:left;">
+Is the initiative registered before or after the initiators collected
+the signatures required. (If a small number of signatures is need before
+the registration, but most signatures are collected after the
+registration, then the question should be coded as “before”)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+Is formal admissibility decided in a special procedure?
+</td>
+<td style="text-align:left;">
+Whether the procedure for registration/admission has special rules such
+as shortened deadlines, restricted participation rights etc. that
+otherwise do not characterise the decision-making of the state organ
+concerned? Please provide an answer based on the procedure of the state
+organ deciding in first-instance, but indicate in the comments if there
+are significant differences in the remedy procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+Do participants have a right to be heard in the formal admissibility
+procedure?
+</td>
+<td style="text-align:left;">
+Whether the initiators or other interested parties can appear before the
+state organ and state their arguments. Please provide an answer based on
+the procedure of the state organ deciding in first-instance, but
+indicate in the comments if there are significant differences in the
+remedy procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+Is there an evidentary procedure in the formal admissibility procedure?
+</td>
+<td style="text-align:left;">
+Whether the decision-making body is allowed to gather evidence other
+than written submissions (e.g. invite parties to testify or order expert
+opinions). Please provide an answer based on the procedure of the state
+organ deciding in first-instance, but indicate in the comments if there
+are significant differences in the remedy procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+Are the legal consequences of the admissibility procedures binding?
+</td>
+<td style="text-align:left;">
+After the state organ assessed the question against the formal imits,
+does it have the authority to stop the initiative or does it only
+publish a non-binding opinion
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+Is invalidity the legal consequence of inadmissibility?
+</td>
+<td style="text-align:left;">
+At the end of the formal admissibility procedure, does the state organ
+invalidate (i.e. annul) the initiative or does it have other powers
+(e.g. rewriting the question or sending it back for reconsideration)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+Is there a substantive admissibility check?
+</td>
+<td style="text-align:left;">
+Is there a state institution checking whether the initiative complies
+with the limits imposed on the agenda initiative. Such a substantive
+admission decision could entail checking that the initiative is not on a
+prohibted topic, complies with the constitution, or also checking formal
+limits such as clarity of question, unity of form
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
+Who decides about the substantive admissibility?
+</td>
+<td style="text-align:left;">
+Which state institution checks whether the initiative complies with the
+substantive limits?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+Is there a legal remedy against the decision on substantive
+admissibility?
+</td>
+<td style="text-align:left;">
+Appeal to a higher administrative, judicial or state organ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+Who decides about the claim for remedy in the substantive admissibility
+procedure?
+</td>
+<td style="text-align:left;">
+Which state institution carries out the appeal procedure
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:left;">
+Who can initiate the remedy procedure? (state actor - initiator -
+anyone)
+</td>
+<td style="text-align:left;">
+Who has the right to appeal against the substantive admissibility
+decision (e.g. only initiators, any citizens, certain state actors etc.)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+Does the substantive admissibility procedure take place before the
+signature collection?
+</td>
+<td style="text-align:left;">
+Is the substantive admissibility decided before or after the initiators
+collected the signatures required. (If a small number of signatures is
+need before the registration, but most signatures are collected after
+the registration, then the question should be coded as “before”)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+Is substantive admissibility decided in a special procedure?
+</td>
+<td style="text-align:left;">
+Whether the procedure for checking the substantive admissibility has
+special rules such as shortened deadlines, restricted participation
+rights etc. that otherwise do not characterise the decision-making of
+the respective state organ. Please provide an answer based on the
+procedure of the state organ deciding in first-instance, but indicate in
+the comments if there are significant differences in the remedy
+procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:left;">
+Do participants have a right to be heard in the substantive
+admissibility procedure?
+</td>
+<td style="text-align:left;">
+Whether the initiators or other interested parties can appear before the
+state organ and state their arguments. Please provide an answer based on
+the procedure of the state organ deciding in first-instance, but
+indicate in the comments if there are significant differences in the
+remedy procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:left;">
+Is there an evidentary procedure in the substantive admissibility
+procedure?
+</td>
+<td style="text-align:left;">
+Whether the decision-making body is allowed to gather evidence other
+than written submissions (e.g. invite parties to testify or order expert
+opinions). Please provide an answer based on the procedure of the state
+organ deciding in first-instance, but indicate in the comments if there
+are significant differences in the remedy procedure.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:left;">
+Are the legal consequences of the admissibility procedures binding?
+</td>
+<td style="text-align:left;">
+After the state organ assessed the question against the substantive
+limits, does it have the authority to stop the initiative or does it
+only publish a non-binding opinion
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:left;">
+Is invalidity the legal consequence of inadmissibility?
+</td>
+<td style="text-align:left;">
+At the end of the substantive admissibility procedure, does the state
+organ invalidate (i.e. annul) the initiative or does it have other
+powers (e.g. rewriting the question or sending it back for
+reconsideration)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:left;">
+Does the proposal have to be submitted as a (draft) legal text?
+</td>
+<td style="text-align:left;">
+Do the initiators have to create a draft of the proposed provision or
+legal act or is it enough to propose a question?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:left;">
+Are there any formal limits on the wording of the initiative proposal?
+</td>
+<td style="text-align:left;">
+Whether there are legal restrictions on how the initiative question or
+issue has to be formulated (e.g. it has to be clear, it has to be a
+single question, etc.)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+Is there a clarity of the question requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the initiative question or issue
+has to be formulated precisely, in a clear, non-misleading manner
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:left;">
+Is there a unity of form requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the initiative question or issue
+shall not combine a general and a specifically-worded proposal
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:left;">
+Is there a unity of substance requirement?
+</td>
+<td style="text-align:left;">
+Whether there is a legal provision that the different parts of
+initiative question or issue shall have an internal connection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+Are there any other formal limits? (If Yes, describe in Comments)
+</td>
+<td style="text-align:left;">
+Whether there are any other requirements about the formulation of the
+initiative question or issue
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:left;">
+Can any kind of issue be the subject of an agenda initiative (not
+counting explicitly prohibited issues)?
+</td>
+<td style="text-align:left;">
+What is the positive scope of referendums/initiatives: which topics can
+be the subject of a referendum/initiative? This is a question about how
+the general scope of referendums is defined, without taking into account
+the explicit topical restrictions.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:left;">
+Can only issues of special importance be the subjects of an agenda
+initiative?
+</td>
+<td style="text-align:left;">
+Is the positive scope of initiatives limited to questions that are
+deemed important?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:left;">
+Can only certain enumerated issues be the subjects of an agenda
+initiative?
+</td>
+<td style="text-align:left;">
+In this case not any question can be the subject of a initiative, only
+those topics that are listed in the relevant legal act
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:left;">
+Are there any prohibited issues?
+</td>
+<td style="text-align:left;">
+Are there substantive limits on initiatives and referendums,
+i.e. certain topics that cannot be the subject of a referendum?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on constitutional amendments prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a general ban on proposing constitutional
+changes. If only certain constitutional provisions are excluded from
+referendums, those provisions/topics should be indicated specifically in
+the next questions.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:left;">
+Are agenda initiatives related to international law obligations
+prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to the signing or ratification of international
+treaties, association with other states and participation in
+international organisations
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:left;">
+Are agenda initiatives related to fundamental rights and freedoms
+prohibited?
+</td>
+<td style="text-align:left;">
+Including both the restriction and the expansion of fundamental rights
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on state structure or form of government
+prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing such fundamental features of
+the constitutional system as for example parliamentary democracy,
+separation of powers, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on state symbols prohibited?
+</td>
+<td style="text-align:left;">
+Including state flag, national anthem, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on the official language prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the official language
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on territorial issues or territorial integrity
+prohibited?
+</td>
+<td style="text-align:left;">
+Including any question about state territory
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on state finances (budget, taxes, or other
+financial obligations) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a limit on proposing changes in either the
+revenue or the expenditure side of the state finances or on anything
+else related to state finances.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:left;">
+Are agenda initiativesissues related to national security (military,
+police, secret services) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on initiatives about the organisation and
+the rules of the internal security of the state
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on emergency powers (declaration of war, state of
+emergency, etc) and urgent matters prohibited?
+</td>
+<td style="text-align:left;">
+This includes a ban on war powers and also state emergency measures
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on pardon and amnesty prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to individual and mass measures of setting
+prisoners free
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on naturalisation issues prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to questions about citizenship
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on minorities or minority rights prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on changing the status or rights of
+minorities in the country
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on the rules of elections and referendums
+prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on changing legal provisions of elections
+and referendums by a referendum
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on the election or appointment of state officials
+or civil service laws prohibited?
+</td>
+<td style="text-align:left;">
+This questions refers to a ban on having an initiative about single
+appointments or laws on state personnel
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on legislative competences prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of legislative
+competences
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on executive competences prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of executive
+competences
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on issues related to the judiciary (competences,
+independence, etc) prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the scope of judicial
+competences or any other issue that may change the status or
+independence of the judiciary
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:left;">
+Are agenda initiatives on issues related to local governance prohibited?
+</td>
+<td style="text-align:left;">
+This question refers to a ban on changing the status, the composition or
+the competences of local governments
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:left;">
+Are there any other prohibited issues? (If so Yes, describe in Comments)
+</td>
+<td style="text-align:left;">
+If there are any other prohibited topics, please indicate those in the
+comments section
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:left;">
+Who has to formally react to a successful agenda proposal?
+</td>
+<td style="text-align:left;">
+Which state institution’s agenda is affected by the proposal and who has
+to respond to it (e.g. is there a special department handling the
+citizen proposals within the state institution)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:left;">
+What form does that reaction have to take?
+</td>
+<td style="text-align:left;">
+What kind of procedure is triggered by the agenda proposal? E.g. is it a
+start of an ordinary legislative procedure or is their a special
+procedure for a citizen-initiated agenda proposal (special hearing,
+special decision-making)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:left;">
+How many citizen-initiated agenda proposals have been launched since
+1990?
+</td>
+<td style="text-align:left;">
+How many agenda initiatives have been started since 1990?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:left;">
+How many citizen-initiated agenda proposals have been declared formally
+or substantively inadmissible since 1990?
+</td>
+<td style="text-align:left;">
+How many agenda initiatives have failed because a state organ found that
+they were not compatible with the formal or substantive limits?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:left;">
+Does this type of agenda initiative exist at the subnational level?
+</td>
+<td style="text-align:left;">
+Whether the instrument has a local or regional version, when the
+initiated question is put on the agenda of a local entity
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
