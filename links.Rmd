@@ -2,12 +2,13 @@
 title: "Links"
 output: html_document
 ---
+<br/>
 
-### Resources and Links
+#### Useful resources and Links
 
-1. Here is an example of a link to a webpage of our own <a href="https://fmendez72.github.io/lidd/Liddpages/ConceptualMap.html" target="_blank">[see link]</a>
+1. The ERC-funded <a href="https://fmendez72.github.io/lidd/Liddpages/ConceptualMap.html" target="_blank">LIDD project</a>
 
-2. Here is an example of an external link to the <a href="https://www.constituteproject.org/search?lang=en" target="_blank">Constitute Project</a> database, which has all country constitutions in English.   
+2. The <a href="https://www.constituteproject.org/search?lang=en" target="_blank">Constitute Project</a> database, which has all country constitutions in English.   
 
 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 

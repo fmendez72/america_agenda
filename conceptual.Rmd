@@ -6,9 +6,19 @@ output: html_document
 <br/>
 
 #### Overall conceptualisation
-The typology is informed by the LIDD project and comprises 7 instruments of direct democracy depicted that are depicted in the figure below. These are the most prevalent instruments of direct democracy across the Council of Europe states. Definitions for each of the instruments are provided in the boxes below. The typology does not include the Recall referendum
+The typology is informed by the LIDD project and comprises the following 7 instruments of direct democracy, which are also depicted in the figure below. 
 
-<br/><br/>
+1. Agenda initiative  
+2. Citizen-initiated rejective referendum
+3. Citizen-initiated proactive referendum
+4. Law-initiated referendum
+5. Legislature-initiated referendum
+6. Executive-initiated referendum
+7. Subnational-initiated referendum
+
+These are the most prevalent instruments of direct democracy across the Council of Europe states. Note, the typology does not include the Recall referendum
+
+<br/>
 
 <img src="https://fmendez72.github.io/america_agenda/images/liddConcept2.png" width=70% height=70%>
 <br/><br/>
