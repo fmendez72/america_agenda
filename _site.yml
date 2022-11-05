@@ -1,6 +1,6 @@
 name: "Americas agenda"
 navbar:
-  title: "Agenda iniative in the Americas"
+  title: "Agenda iniative"
   left:
     - text: "Home"
       href: index.html
