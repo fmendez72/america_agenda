@@ -4,9 +4,9 @@ output: html_document
 ---
 <br/>
 
-Below are two links to ongoing data collection efforts stemming from the LIDD project. While the data collection related to the LIDD database (the 46 Council of Europe member states) is at aqn advanced stage, the Americas database is a work in progress.
+Below are two links to ongoing data collection efforts stemming from the LIDD project. While the data collection related to the LIDD database (covers 46 member states of the Council of Europe) is at an advanced stage, the Americas database is a work in progress.
 
 
 ##### <a href="http://lidd-project.org/data" target="_blank">The LIDD database (Council of Europe member states)</a>
 
-##### <a href="https://cohesify.cut.ac.cy:5601/s/fm_tweets/app/dashboards?auth_provider_hint=anonymous1#/view/1f5c7680-25e3-11ec-919b-bf41f2db6f20?embed=true&amp;_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))" target="_blank">Latin America (work in progress)</a>
+##### <a href="https://fmendez72.github.io/america_agenda/pages/americas_database.html" target="_blank">Americas database (work in progress)</a>
